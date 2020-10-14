@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtracionesActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:text="Atraciones"
+        android:textSize="50sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left"
+
+        android:text="Parque del cafe"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Recuca"
+        android:textSize="30sp"
+        android:layout_marginTop="170dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Valle de cocora"
+        android:textSize="30sp"
+        android:layout_marginTop="250dp"
+        android:gravity="left"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Panaca"
+        android:textSize="30sp"
+        android:layout_marginTop="320dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="70sp"
+        android:text="Parque de los \nArrieros"
+        android:textSize="30sp"
+        android:layout_marginTop="395dp"
+        android:gravity="left"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:text="Museo Quimbaya"
+        android:textSize="30sp"
+        android:layout_marginTop="500dp"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="70sp"
+        android:text="Jardin Botanico del Quindio"
+        android:textSize="30sp"
+        android:layout_marginTop="600dp"
+        android:gravity="left"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnParqueCafe"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="313dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClick"
+        />
+
+    <ImageButton
+        android:id="@+id/btnRecuca"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnValleCocora"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClick"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPanaca"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        />
+
+    <ImageButton
+        android:id="@+id/btnParqueArriero"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClick"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnMuseoQuimbaya"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="onClick"
+        />
+
+    <ImageButton
+        android:id="@+id/btnJardinBotanico"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="295dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClick"/>
+</RelativeLayout>

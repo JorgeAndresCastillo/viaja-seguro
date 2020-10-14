@@ -1,9 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChaletsActivity">
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tituloChalets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="7dp"
+        android:text="chalets"
+        android:textColor="@color/colorBlack"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iconoChalets"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="55dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonSolyluna"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/iconoChalets"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="sol y luna" />
+
+    <ImageView
+        android:id="@+id/imageSolyluna"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tituloChalets"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonLajoya"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageSolyluna"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="La joya" />
+
+    <ImageView
+        android:id="@+id/imageLajoya"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonSolyluna"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonEldescanso"
+        android:layout_width="262dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageLajoya"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="El descanso" />
+
+    <ImageView
+        android:id="@+id/imageEldescanso"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonLajoya"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonAramat"
+        android:layout_width="262dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageEldescanso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Aramat" />
+
+    <ImageView
+        android:id="@+id/imageAramat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonEldescanso"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <ImageView
+        android:id="@+id/imageLilianaquindio"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonAramat"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonLilianaQuindio"
+        android:layout_width="262dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/buttonAramat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="Lilina quindio" />
+
+</RelativeLayout>

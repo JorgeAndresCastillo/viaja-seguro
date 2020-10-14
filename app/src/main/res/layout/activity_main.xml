@@ -40,7 +40,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
-        android:text="Atracciones" />
+        android:text="Atracciones"
+        android:onClick="onClick"/>
 
     <ImageView
         android:id="@+id/iconoAtracciones"
@@ -60,7 +61,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="50dp"
-        android:text="chalets" />
+        android:text="chalets"
+        android:onClick="onClick"/>
 
     <ImageView
         android:id="@+id/iconoChalets"
@@ -80,7 +82,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
-        android:text="Restaurantes" />
+        android:text="Restaurantes"
+        android:onClick="onClick"/>
 
     <ImageView
         android:id="@+id/iconoRestaurantes"
@@ -100,7 +103,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="50dp"
-        android:text="Miradores" />
+        android:text="Miradores"
+        android:onClick="onClick"/>
 
     <ImageView
         android:id="@+id/imageView5"

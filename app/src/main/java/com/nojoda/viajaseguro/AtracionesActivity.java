@@ -1,23 +1,27 @@
 package com.nojoda.viajaseguro;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class AtracionesActivity extends AppCompatActivity {
 
-    Button botonAtraciones;
+    ImageButton botonParqueCafe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_atraciones);
 
-        botonAtraciones= (Button) findViewById(R.id.buttonAtracciones);
+        botonParqueCafe= (ImageButton) findViewById(R.id.btnParqueCafe);
     }
 
 
@@ -26,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()){
 
-            case R.id.buttonAtracciones:
-                miIntent= new Intent(MainActivity.this,AtracionesActivity.class);
+            case R.id.btnParqueCafe:
+                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
                 break;
 
@@ -60,6 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
                 break;
         }
-        startActivity(miIntent);
+        //startActivity(miIntent);
     }
 }
