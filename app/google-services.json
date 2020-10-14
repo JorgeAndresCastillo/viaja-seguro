@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "791034745257",
+    "firebase_url": "https://viaja-seguro-a8c41.firebaseio.com",
+    "project_id": "viaja-seguro-a8c41",
+    "storage_bucket": "viaja-seguro-a8c41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791034745257:android:052010dca5df1130f534b8",
+        "android_client_info": {
+          "package_name": "com.nojoda.viajaseguro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791034745257-f2svga4ptdidlvsm4d10he8imqfvq143.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nojoda.viajaseguro",
+            "certificate_hash": "503ca564ee52aa36e6b5b9502cc291c6cdd998f6"
+          }
+        },
+        {
+          "client_id": "791034745257-objh2v7ft0p5l1p4k8fh7s0btdkjo52f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyoAcHiRHEdELqG7qQ3b2Zom8kuGP6p_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791034745257-objh2v7ft0p5l1p4k8fh7s0btdkjo52f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
