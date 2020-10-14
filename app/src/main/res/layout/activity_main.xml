@@ -9,16 +9,17 @@
 
     <TextView
         android:id="@+id/tituloViajaSeguro"
-        android:layout_width="253dp"
-        android:layout_height="56dp"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="7dp"
         android:text="viaja seguro"
         android:textSize="45sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -27,7 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="-56dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
         app:srcCompat="@drawable/logo_viaja_saeguro" />
 
