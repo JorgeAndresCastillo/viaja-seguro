@@ -1,18 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/tituloViajaSeguro"
+        android:layout_width="253dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
         android:text="viaja seguro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="45sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-56dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/logo_viaja_saeguro" />
+
+    <Button
+        android:id="@+id/buttonAtracciones"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/tituloViajaSeguro"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="Atracciones" />
+
+    <ImageView
+        android:id="@+id/iconoAtracciones"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tituloViajaSeguro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/parque_de_atracciones" />
+
+    <Button
+        android:id="@+id/buttonChalets"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/iconoAtracciones"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="chalets" />
+
+    <ImageView
+        android:id="@+id/iconoChalets"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonAtracciones"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/hotel" />
+
+    <Button
+        android:id="@+id/buttonRestaurantes"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/iconoChalets"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:text="Restaurantes" />
+
+    <ImageView
+        android:id="@+id/iconoRestaurantes"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonChalets"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/bandeja" />
+
+    <Button
+        android:id="@+id/buttonMiradores"
+        android:layout_width="264dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/iconoRestaurantes"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:text="Miradores" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonRestaurantes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/torre_de_control" />
+
+</RelativeLayout>
