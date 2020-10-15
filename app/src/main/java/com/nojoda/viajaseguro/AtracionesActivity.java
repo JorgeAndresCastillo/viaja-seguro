@@ -10,18 +10,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class AtracionesActivity extends AppCompatActivity {
 
-    ImageButton botonParqueCafe;
+    Button botonParqueCafe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atraciones);
 
-        botonParqueCafe= (ImageButton) findViewById(R.id.btnParqueCafe);
+        botonParqueCafe= (Button) findViewById(R.id.btnParqueCafe);
     }
 
 

@@ -11,13 +11,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button botonAtraciones;
+    Button botonlugares;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        botonAtraciones= (Button) findViewById(R.id.buttonAtracciones);
+        botonlugares= (Button) findViewById(R.id.buttonAtracciones);
     }
 
 
@@ -29,37 +29,26 @@ public class MainActivity extends AppCompatActivity {
             case R.id.buttonAtracciones:
                 miIntent= new Intent(MainActivity.this,AtracionesActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                startActivity(miIntent);
                 break;
 
-            case R.id.btnRecuca:
+            case R.id.buttonChalets:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //startActivity(miIntent);
                 break;
 
-            case R.id.btnValleCocora:
+            case R.id.buttonRestaurantes:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //startActivity(miIntent);
                 break;
 
-            case R.id.btnPanaca:
+            case R.id.buttonMiradores:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
-            case R.id.btnParqueArriero:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
-
-            case R.id.btnMuseoQuimbaya:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
-
-            case R.id.btnJardinBotanico:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //startActivity(miIntent);
                 break;
         }
-        startActivity(miIntent);
     }
 }
