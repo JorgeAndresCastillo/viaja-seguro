@@ -35,11 +35,13 @@
 
     <Button
         android:id="@+id/buttonAtracciones"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_width="264dp"
         android:layout_height="62dp"
         android:layout_below="@+id/tituloViajaSeguro"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="35dp"
         android:text="Atracciones"
         android:onClick="onClick"/>
@@ -51,13 +53,15 @@
         android:layout_below="@+id/tituloViajaSeguro"
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="17dp"
         android:layout_toStartOf="@+id/buttonAtracciones"
         app:srcCompat="@drawable/parque_de_atracciones" />
 
     <Button
         android:id="@+id/buttonChalets"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_width="264dp"
         android:layout_height="62dp"
         android:layout_below="@+id/iconoAtracciones"
@@ -81,6 +85,8 @@
 
     <Button
         android:id="@+id/buttonRestaurantes"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_width="264dp"
         android:layout_height="62dp"
         android:layout_below="@+id/iconoChalets"
@@ -104,6 +110,8 @@
 
     <Button
         android:id="@+id/buttonMiradores"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:layout_width="264dp"
         android:layout_height="62dp"
         android:layout_below="@+id/iconoRestaurantes"
