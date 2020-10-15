@@ -1,205 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AtracionesActivity"
     android:background="@color/colorPrimary">
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="491dp"
-        android:layout_marginEnd="52dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="585dp"
-        android:layout_marginEnd="263dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="673dp"
-        android:layout_marginEnd="51dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="311dp"
-        android:layout_marginEnd="55dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="221dp"
-        android:layout_marginEnd="271dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="58dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
     <TextView
-        android:layout_width="335dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Atraciones"
-        android:textSize="50sp"
-        android:textStyle="bold" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="12dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
-
-    <Button
-        android:id="@+id/btnParqueCafe"
+        android:id="@+id/tituloChalets"
         android:layout_width="wrap_content"
-        android:layout_height="66dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="313dp"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="179dp"
-        android:layout_marginBottom="651dp"
-        android:onClick="onClick"
-        android:text="Parque del cafe" />
-
-    <Button
-        android:id="@+id/btnRecuca"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="694dp"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="92dp"
-        android:onClick="onClick"
-        android:text="Recucua" />
-
-    <Button
-        android:id="@+id/btnValleCocora"
-        android:layout_width="191dp"
-        android:layout_height="71dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="295dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="555dp"
-        android:onClick="onClick"
-        android:text="Valle de cocora" />
-
-
-    <Button
-        android:id="@+id/btnPanaca"
-        android:layout_width="wrap_content"
-        android:layout_height="66dp"
-        android:layout_alignEnd="@+id/imageView6"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="317dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="463dp"
-        android:onClick="onClick"
-        android:text="Panaca" />
-
-    <Button
-        android:id="@+id/btnParqueArriero"
-        android:layout_width="wrap_content"
-        android:layout_height="66dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="207dp"
-        android:layout_marginLeft="295dp"
-        android:layout_marginTop="408dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="373dp"
-        android:onClick="onClick"
-        android:text="Parque Arriero" />
-
-    <Button
-        android:id="@+id/btnMuseoQuimbaya"
-        android:layout_width="210dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="508dp"
-        android:layout_marginBottom="271dp"
-        android:onClick="onClick"
-        android:text="Museo Quimbaya" />
-
-    <Button
-        android:id="@+id/btnJardinBotanico"
-        android:layout_width="184dp"
-        android:layout_height="38dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="295dp"
-        android:layout_marginTop="599dp"
-        android:layout_marginEnd="9dp"
-        android:onClick="onClick"
-        android:text="Jardin Botanico" />
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="50dp"
+        android:text="Atraciones"
+        android:textColor="@color/colorBlack"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="60dp"
+        android:id="@+id/iconoChalets"
+        android:layout_width="78dp"
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="395dp"
-        android:layout_marginEnd="269dp"
-        app:srcCompat="@drawable/parque_de_atracciones" />
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginRight="100dp"
+        android:layout_toEndOf="@+id/tituloChalets"
+        app:srcCompat="@drawable/hotel" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="529dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/idImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Descripcion " />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>

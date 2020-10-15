@@ -22,49 +22,49 @@ public class AtracionesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_atraciones);
 
-        botonParqueCafe= (Button) findViewById(R.id.btnParqueCafe);
+        //botonParqueCafe= (Button) findViewById(R.id.btnParqueCafe);
     }
 
 
     public void onClick(View view) {
         Intent miIntent = null;
 
-        switch (view.getId()){
+        //switch (view.getId()){
 
-            case R.id.btnParqueCafe:
+            //case R.id.btnParqueCafe:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
 
-            case R.id.btnRecuca:
+            //case R.id.btnRecuca:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
 
-            case R.id.btnValleCocora:
+            //case R.id.btnValleCocora:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
 
-            case R.id.btnPanaca:
+            //case R.id.btnPanaca:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
-            case R.id.btnParqueArriero:
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
+           // case R.id.btnParqueArriero:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
 
-            case R.id.btnMuseoQuimbaya:
+           // case R.id.btnMuseoQuimbaya:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
 
-            case R.id.btnJardinBotanico:
+            //case R.id.btnJardinBotanico:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                break;
-        }
+                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                //break;
+        //}
         //startActivity(miIntent);
     }
 }
