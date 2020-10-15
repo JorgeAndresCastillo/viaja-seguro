@@ -33,21 +33,21 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.buttonChalets:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
+                miIntent= new Intent(MainActivity.this,ChaletsActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                //startActivity(miIntent);
+                startActivity(miIntent);
                 break;
 
             case R.id.buttonRestaurantes:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
+                miIntent= new Intent(MainActivity.this,RestaurantesActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                //startActivity(miIntent);
+                startActivity(miIntent);
                 break;
 
             case R.id.buttonMiradores:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
+                miIntent= new Intent(MainActivity.this,MiradoresActivity.class);
                 Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                //startActivity(miIntent);
+                startActivity(miIntent);
                 break;
         }
     }

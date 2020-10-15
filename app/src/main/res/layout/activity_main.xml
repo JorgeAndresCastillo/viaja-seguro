@@ -27,9 +27,10 @@
         android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="-56dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
+        android:layout_toEndOf="@+id/tituloViajaSeguro"
         app:srcCompat="@drawable/logo_viaja_saeguro" />
 
     <Button
@@ -51,6 +52,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/buttonAtracciones"
         app:srcCompat="@drawable/parque_de_atracciones" />
 
     <Button
@@ -70,8 +73,10 @@
         android:layout_height="60dp"
         android:layout_below="@+id/buttonAtracciones"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
+        android:layout_toEndOf="@+id/buttonChalets"
         app:srcCompat="@drawable/hotel" />
 
     <Button
@@ -93,6 +98,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="35dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/buttonRestaurantes"
         app:srcCompat="@drawable/bandeja" />
 
     <Button
@@ -112,8 +119,12 @@
         android:layout_height="60dp"
         android:layout_below="@+id/buttonRestaurantes"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="35dp"
+        android:layout_toEndOf="@+id/buttonMiradores"
         app:srcCompat="@drawable/torre_de_control" />
+
+
 
 </RelativeLayout>
