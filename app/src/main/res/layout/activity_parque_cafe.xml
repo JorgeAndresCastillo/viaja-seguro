@@ -13,24 +13,121 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
         android:text="Parque del cafe"
+        android:textColor="@color/colorBlack"
         android:textSize="36dp"
-        android:textStyle="bold"
-        android:textColor="@color/colorBlack"/>
+        android:textStyle="bold" />
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="114dp"
+        android:layout_height="92dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
         android:layout_toEndOf="@+id/ParqueDelCafe"
-        app:srcCompat="@drawable/logo_viaja_saeguro" />
+        app:srcCompat="@drawable/parque_del_cafe" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="341dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="594dp"
+        android:text="Somos una entidad sin ánimo de lucro, creada el 24 de febrero de 1995 por la Federación Nacional de Cafeteros de Colombia y el Comité Departamental de Cafeteros del Quindío.\nNuestro objetivo principal es mostrar en un contexto natural, divertido y seguro el desarrollo que genera el café en nuestro país para rendir un homenaje a la pujanza de los cafeteros en Colombia. " />
+
+    <TextView
+        android:layout_width="341dp"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="446dp"
+        android:gravity="center"
+        android:text="¡Horario de atencion!\nLunes 9 am a 7pm \nMartes 9 am a 7pm \nMiercoles 9 am a 7pm \nJueves 9 am a 7pm \nViernes 9 am a 7pm " />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="85dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ratingBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="11dp"
+        android:text="¿Deseas puntuar el establecimiento?" />
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="Iniciar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <Button
+        android:onClick="onClick"
+        android:id="@+id/btnregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        android:layout_marginStart="267dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <ImageView
+        android:layout_width="307dp"
+        android:layout_height="148dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="394dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/maps" />
 
 
 </RelativeLayout>

@@ -29,12 +29,13 @@ public class AtracionesActivity extends AppCompatActivity {
     public void onClick(View view) {
         Intent miIntent = null;
 
-        //switch (view.getId()){
+        switch (view.getId()){
 
-            //case R.id.btnParqueCafe:
-                //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
-                //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
-                //break;
+            case R.id.parquecafe:
+                miIntent= new Intent(AtracionesActivity.this,ParqueCafeActivity.class);
+                Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
+                startActivity(miIntent);
+                break;
 
             //case R.id.btnRecuca:
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
@@ -64,7 +65,6 @@ public class AtracionesActivity extends AppCompatActivity {
                 //miIntent= new Intent(AtracionesActivity.this,MainActivity.class);
                 //Toast.makeText(this, "Funcionando el boton", Toast.LENGTH_LONG).show();
                 //break;
-        //}
-        //startActivity(miIntent);
+        }
     }
 }
