@@ -1,351 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorPrimary"
+    tools:context=".RestaurantesActivity">
+
     <TextView
-        android:id="@+id/tituloChalets"
+        android:id="@+id/tituloRestaurantes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="7dp"
         android:text="Restaurantes"
         android:textColor="@color/colorBlack"
-        android:textSize="35sp"
+        android:textSize="45sp"
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/iconoChalets"
-        android:layout_width="59dp"
-        android:layout_height="60dp"
+        android:id="@+id/iconoBandeja"
+        android:layout_width="56dp"
+        android:layout_height="61dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="53dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="100dp"
-        android:layout_toEndOf="@+id/tituloChalets"
-        app:srcCompat="@drawable/hotel" />
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/tituloRestaurantes"
+        app:srcCompat="@drawable/bandeja" />
 
-    <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="233dp"
+    <Button
+        android:id="@+id/buttonLaFojata"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/iconoBandeja"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="6dp"
-        android:orientation="vertical">
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="La fojata" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageLaFojata"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tituloRestaurantes"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/buttonLaFojata"
+        app:srcCompat="@drawable/fogata" />
 
-            <ImageView
-                android:id="@+id/idImagen1"
-                android:layout_width="90dp"
-                android:layout_height="68dp"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/fogata"
-                />
+    <Button
+        android:id="@+id/buttonElRoble"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageLaFojata"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="El Roble" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="La fogata"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="El roble"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/idImagen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/elroblearmenia" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="233dp"
+    <ImageView
+        android:id="@+id/imageElRoble"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/buttonLaFojata"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="338dp"
-        android:layout_marginEnd="6dp"
-        android:orientation="vertical">
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/buttonElRoble"
+        app:srcCompat="@drawable/elroblearmenia" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/idImagen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/darpapaya" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Nombre"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Don frijoles"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/idImagen"
-                android:layout_width="252dp"
-                android:layout_height="72dp"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/donfrijoles" />
-
-        </LinearLayout>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="400dp"
-        android:layout_height="233dp"
+    <Button
+        android:id="@+id/buttonDarPapaya"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageElRoble"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="550dp"
-        android:layout_marginEnd="6dp"
-        android:orientation="vertical">
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="Dar Papaya" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/imageDarPapaya"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/buttonElRoble"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/buttonDarPapaya"
+        app:srcCompat="@drawable/darpapaya" />
 
-            <ImageView
-                android:id="@+id/idImagen"
-                android:layout_width="114dp"
-                android:layout_height="84dp"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/salamandra" />
+    <Button
+        android:id="@+id/buttonSalamandra"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/imageDarPapaya"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Salamandra" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageSalamandra"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_below="@+id/buttonDarPapaya"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_toEndOf="@+id/buttonSalamandra"
+        app:srcCompat="@drawable/salamandra" />
 
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="Salamandra"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@color/colorPrimary" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/idNombre"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="El sabor paisita"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/idInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:text="Descripcion " />
-
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/idImagen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/elsaborpaisita" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/idImagen"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/elsaborpaisita" />
-
-    </LinearLayout>
 </RelativeLayout>
