@@ -49,10 +49,11 @@
         android:layout_height="47dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginBottom="4dp"
         android:layout_toEndOf="@+id/tituloChalets"
         app:layout_constraintBottom_toBottomOf="@+id/editText2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/user"
         tools:ignore="MissingConstraints" />
@@ -104,16 +105,16 @@
     <EditText
 
         android:id="@+id/editText2"
-        android:layout_width="283dp"
-        android:layout_height="46dp"
+        android:layout_width="276dp"
+        android:layout_height="42dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="444dp"
         android:layout_marginEnd="24dp"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -151,8 +152,8 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="286dp"
-        android:layout_height="46dp"
+        android:layout_width="280dp"
+        android:layout_height="49dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
@@ -162,7 +163,7 @@
         android:inputType="datetime"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
@@ -239,7 +240,7 @@
         android:layout_toEndOf="@+id/tituloChalets"
         app:layout_constraintBottom_toBottomOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/user"
         tools:ignore="MissingConstraints" />
@@ -251,8 +252,9 @@
         android:layout_marginTop="8dp"
         android:text="O registrate con tu ID de huawei"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
 
